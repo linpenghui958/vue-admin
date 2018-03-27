@@ -24,6 +24,7 @@ module.exports = {
     }
   },
   // add your custom rules here
+  
   rules: {
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
@@ -47,6 +48,17 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'linebreak-style': [0, "windows"],
-    'max-len': [0, 80, 4]
+    'max-len': [0, 80, 4],
+    'no-underscore-dangle': 0,
+    'prefer-template': 0,
+    'global-require': 0,
+    'no-mixed-operators': 0,
+    'no-lonely-if': 0,
+    'arrow-body-style': 0,
+    'no-param-reassign': 0,
+    "no-shadow": 0,
+    "no-shadow-restricted-names": 2,
+    'no-else-return': 0,
+    'no-restricted-syntax': 0
   }
 }

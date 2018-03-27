@@ -118,7 +118,7 @@ export default {
           this.animating = false;
           this.landSuccess = false;
           this.$router.push({
-            path: '/home'
+            path: '/'
           })
         }, this.submitPhase2)
       }, this.submitPhase1)

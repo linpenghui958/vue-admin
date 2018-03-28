@@ -59,7 +59,6 @@ export default {
     height: 110px
     text-align: center
     width: 110px
-    float: left
     font-size: 30px
     color: #24292e
     cursor: pointer

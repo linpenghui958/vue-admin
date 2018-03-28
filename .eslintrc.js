@@ -59,6 +59,24 @@ module.exports = {
     "no-shadow": 0,
     "no-shadow-restricted-names": 2,
     'no-else-return': 0,
-    'no-restricted-syntax': 0
+    'no-restricted-syntax': 0,
+    'no-trailing-spaces': 0,
+    'semi': 0,
+    'space-before-function-paren': 0,
+    'one-var-declaration-per-line': 0,
+    'func-names': 0,
+    'comma-dangle': 0,
+    'no-console': 0,
+    'no-multi-assign': 0,
+    'camelcase': 0,
+    'arrow-parens': 0,
+    'no-plusplus': 0,
+    'radix': 0,
+    'no-control-regex': 0,
+    'one-var': 0,
+    'operator-assignment': 0,
+    'object-property-newline': 0
+
+
   }
 }

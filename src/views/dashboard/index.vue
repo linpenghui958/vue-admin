@@ -1,15 +1,23 @@
 <template>
-  <div>
-    dashaboard
+  <div class="dashboard-container">
+    <component :is="currentRole"></component>
   </div>
 </template>
 
 <script>
-export default {
+import adminDashboard from './admin';
 
+export default {
+  name: 'dashboard',
+  data() {
+    return {
+      currentRole: 'adminDashboard'
+    };
+  },
+  components: {
+    adminDashboard,
+  },
 };
 </script>
 
-<style>
-
-</style>
+<style src="./style.styl" lang="stylus"></style>

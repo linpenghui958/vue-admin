@@ -14,12 +14,15 @@ import SidebarItem from './SidebarItem';
 export default {
   data() {
     return {
-      isCollapse: false,
       routers: [
         { path: '/login', hidden: true },
         {
           path: '',
           redirect: 'dashboard',
+          meta: {
+            title: 'dashboard',
+            icon: 'dashboard',
+          },
           children: [{
             path: 'dashboard',
             name: 'dashboard',
@@ -29,6 +32,10 @@ export default {
         {
           path: '/documentation',
           redirect: '/documentation/index',
+          meta: {
+            title: 'documentation',
+            icon: 'documentation',
+          },
           children: [{
             path: 'index',
             name: 'documentation',
@@ -59,6 +66,10 @@ export default {
         },
         {
           path: '/icon',
+          meta: {
+            title: 'icon',
+            icon: 'icon',
+          },
           children: [{
             path: 'index',
             name: 'icons',
@@ -75,8 +86,11 @@ export default {
   computed: {
     ...mapGetters([
       // 'permission_routers',
-      // 'sidebar',
+      'sidebar',
     ]),
+    isCollapse() {
+      return !this.sidebar.opened;
+    },
   },
 };
 </script>
